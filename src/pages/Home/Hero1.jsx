@@ -45,8 +45,80 @@ function Hero1() {
                   <div>
                     <div className="text-[#9f9e9e] text-sm inter-tight-medium px-10 py-3 flex">
                       <div className="relative overflow-hidden">
-                        <div className="flex animate-marquee whitespace-nowrap">
-                          {/* Your marquee items here */}
+                      <div className="flex animate-marquee whitespace-nowrap ">
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold  px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
+                          <li className="flex px-4">
+                            Latest Work and{" "}
+                            <span className="text-slate-100 font-bold px-2">
+                              Featured
+                            </span>
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -63,7 +135,7 @@ function Hero1() {
                     className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_10,_0.2)] duration-300 w-full sm:w-auto space-y-1"
                   >
                     <div className="w-full flex justify-center p-6">
-                      {!isSignatureLoaded && <div className="loading-spinner"></div>}
+                      {!isSignatureLoaded && <div className="bg-[#222222] h-28 rounded-lg flex justify-center items-center w-full md:w-52 inter-tight-light">Loading..</div>}
                       <img
                         src="https://wpriverthemes.com/landing/gridx-html/assets/images/sign.png"
                         alt="signature"
@@ -100,7 +172,7 @@ function Hero1() {
                     className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_300,_0.2)] duration-300 w-full sm:w-auto space-y-1"
                   >
                     <div className="w-full flex justify-center p-6">
-                      {!isWorkImageLoaded && <div className="loading-spinner"></div>}
+                      {!isWorkImageLoaded && <div className="bg-[#222222] h-28 rounded-lg flex justify-center items-center md:w-52  w-full inter-tight-light">Loading..</div>}
                       <img
                         src="https://wpriverthemes.com/landing/gridx-html/assets/images/my-works.png"
                         alt="signature"
