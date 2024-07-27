@@ -1,8 +1,8 @@
 import React from "react";
-import Loader from "../../components/Loader";
 import Hero2 from "./Hero2";
 import Hero3 from "./Hero3";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 function Hero1() {
   return (
@@ -10,7 +10,13 @@ function Hero1() {
       <section className="  bg-[#0F0F0F]  ">
         <div className="max-w-[1170px] mx-auto">
           <div className="bg-[#0F0F0F] text-white/90 flex flex-wrap gap-y-4 gap-x-4  justify-center p-6 items-center">
-            <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_170,_0.3)] duration-300 px-16 py-6 space-y-1 h-80 max-w-3xl min-w-1/2 md:w-auto flex justify-center items-center  ">
+            <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}}
+           
+            
+            className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_170,_0.3)] duration-300 px-16 py-6 space-y-1 h-80 max-w-3xl min-w-1/2 md:w-auto flex justify-center items-center  ">
               <div>
                 <p className="inter-tight-medium text-xl text-[#BCBCBC]">
                   A WEB DEVELOPER
@@ -24,12 +30,15 @@ function Hero1() {
                   <span>Bareilly</span>{" "}
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             <div className="flex flex-col gap-y-4  w-full md:w-1/2 ">
               <div>
                 
-                <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_10,_0.2)] duration-300  space-y-1 cursor-pointer ">
+                <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_10,_0.2)] duration-300  space-y-1 cursor-pointer ">
                   <div>
                     <div className="text-[#9f9e9e] text-sm inter-tight-medium px-10 py-3 flex  ">
                       <div className="relative    overflow-hidden  ">
@@ -111,12 +120,16 @@ function Hero1() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
 
               <div className=" flex flex-col sm:flex-row justify-center gap-y-4 gap-x-4 ">
               <Link to='/about'>
-                <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_10,_0.2)] duration-300  w-full sm:w-auto  space-y-1 ">
+
+              <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_10,_0.2)] duration-300  w-full sm:w-auto  space-y-1 ">
                   <div className="w-full flex justify-center p-6">
                     <img
                       src="https://wpriverthemes.com/landing/gridx-html/assets/images/sign.png"
@@ -141,10 +154,18 @@ function Hero1() {
                       />
                     </div>
                   </div>
-                </div>
+                </motion.div>
                 </Link>
+
+
+
+
+
                 <Link to='/work'>
-                <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_300,_0.2)] duration-300 w-full sm:w-auto space-y-1 ">
+                <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_300,_0.2)] duration-300 w-full sm:w-auto space-y-1 ">
                   <div className="w-full flex justify-center p-6">
                     <img
                       src="https://wpriverthemes.com/landing/gridx-html/assets/images/my-works.png"
@@ -169,11 +190,18 @@ function Hero1() {
                       />
                     </div>
                   </div>
-                </div>
+                </motion.div>
                 </Link>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
         </div>
         <div className="">
         <Hero2 />

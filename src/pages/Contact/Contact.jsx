@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoCallOutline } from 'react-icons/io5';
 import { MdMailOutline } from 'react-icons/md';
+import {motion } from "framer-motion"
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -37,18 +38,25 @@ function Contact() {
   return (
     <section className="flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px] mx-auto px-7 md:px-24">
       <div className="flex flex-col md:flex-row gap-5">
-        <div className="text-white flex flex-col gap-y-7 pr-20">
+          <div className="text-white flex flex-col gap-y-7 pr-20">
           <p className="inter-tight-bold">CONTACT INFO</p>
           <div className="flex gap-4">
-            <div className="bg-gradient-to-br from-[#222222] to-[#101010] flex justify-center items-center p-4 w-16 text-3xl rounded-lg text-white">
+          <div
+            className="bg-gradient-to-br from-[#222222] to-[#101010] flex justify-center items-center p-4 w-16 text-3xl rounded-lg text-white">
               <MdMailOutline />
             </div>
+            
             <div>
               <p className="inter-tight-bold text-sm text-[#9f9e9e]">Mail Us</p>
               <p className="text-sm inter-tight-bold">connect.pawan69@gmail.com</p>
               <p className="text-sm inter-tight-bold">pawantwp@gmail.com</p>
             </div>
+
           </div>
+
+
+
+          
           <div className="flex gap-4">
             <div className="bg-gradient-to-br from-[#222222] to-[#101010] flex justify-center items-center p-4 w-16 text-3xl rounded-lg text-white">
               <IoCallOutline />
@@ -70,7 +78,10 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 space-y-1 p-4 md:p-10">
+        <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 space-y-1 p-4 md:p-10">
           <form onSubmit={handleSubmit} className="flex flex-col gap-y-5">
             <div className="flex text-4xl inter-tight-bold text-white/90">
               <p className="mr-2">Let's</p>
@@ -117,7 +128,7 @@ function Contact() {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

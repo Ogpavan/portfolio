@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav className='bg-[#0F0F0F] text-white/90 p-6'>
-      <div className='max-w-[1000px] mx-auto flex justify-between items-center'>
+      <div className='max-w-[1000px] mx-auto flex justify-between items-center z-50'>
         <p className='inter-tight-bold text-3xl'>Pawan.</p>
 
         <ul className='md:flex gap-x-4 inter-tight-light text-lg hidden'>
@@ -61,7 +61,7 @@ function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed top-0 left-0 w-full bg-[#0F0F0F] z-50 transition-all duration-700 ease-in-out transform ${
+        className={`md:hidden fixed top-0 left-0 w-full bg-[#0F0F0F] z-30 transition-all duration-300 ease-in-out transform ${
           menuOpen ? 'mt-20 opacity-100' : '-mt-full opacity-0'
         }`}
         style={{ pointerEvents: menuOpen ? 'auto' : 'none' }}

@@ -2,6 +2,7 @@ import React from "react";
 import mobile from '../../assets/mobile-app-dev-icon.png'
 import web from '../../assets/web.png'
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 function About() {
   return (
@@ -23,7 +24,10 @@ function About() {
         </div>
 
         <div className="  flex flex-col gap-5">
-          <div className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
+        <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
             <div className="w-full  px-6 ">
               <img
                 src="https://wpriverthemes.com/landing/gridx-html/assets/images/icon2.png"
@@ -41,10 +45,13 @@ function About() {
                 projects, continually improving my coding skills and efficiency.
               </p>
             </div>
-          </div>
+          </motion.div>
 
             <div className="flex justify-center gap-5 flex-col sm:flex-row">
-              <div className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
+            <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
                 <div className=" text-white/90 p-6 space-y-3  w-full">
                   <p className=" text-xl inter-tight-bold">Experiance</p>
                  <div>
@@ -58,9 +65,12 @@ function About() {
                   <p  className="text-[#9f9e9e]">Larson & Morgan</p>
                  </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
+              <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1  flex-col ">
                 <div className=" text-white/90 p-6 space-y-3  w-full">
                   <p className=" text-xl inter-tight-bold">Education</p>
                  <div>
@@ -74,7 +84,7 @@ function About() {
                   <p  className="text-[#9f9e9e]">Padmawati Academy</p>
                  </div>
                 </div>
-              </div>
+              </motion.div>
               </div>
 
 
@@ -86,7 +96,10 @@ function About() {
                 
               <div className='flex flex-col lg:flex-row gap-5 w-full'>
 
-<div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_253,_560,_0.2)] duration-300   space-y-1   flex flex-col justify-center items-center  md:w-1/2 ">
+              <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}}className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_253,_560,_0.2)] duration-300   space-y-1   flex flex-col justify-center items-center  md:w-1/2 ">
 <div className="w-full flex justify-center p-3  items-center gap-x-5 ">
 <img src={mobile} alt="mobile" className='invert w-10 h-18' />
 <img src={web} alt='' className='invert  w-24 '/>
@@ -108,11 +121,14 @@ function About() {
 </div>
 </div>
 
-</div>
+</motion.div>
 
 
 
-<div className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1 p-6 ">
+<motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}}className="bg-gradient-to-br flex items-end justify-between from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full space-y-1 p-6 ">
 <Link to="/contact" className="w-full ">
 <div className=" text-4xl inter-tight-bold text-white/90">
 <p>Let's</p>
@@ -129,11 +145,14 @@ function About() {
   alt="icon"
 />
 </div>
-</div>
+</motion.div>
 
 </div>
         
-          <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_300,_0.2)] duration-300 w-full sm:w-auto space-y-1 ">
+<motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_300,_0.2)] duration-300 w-full sm:w-auto space-y-1 ">
           <Link to='/work' className="w-full">
             <div className="w-full flex justify-center p-6">
               <img src='https://wpriverthemes.com/landing/gridx-html/assets/images/my-works.png' alt="signature" className="" />
@@ -153,7 +172,7 @@ function About() {
             </div>
             </div>
             </Link>
-              </div>
+              </motion.div>
            
               </div>
               

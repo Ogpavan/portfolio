@@ -16,7 +16,7 @@ function App() {
     // Set a timer for 1 second to switch from loading to loaded
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
 
     // Clear the timer if the component unmounts
     return () => clearTimeout(timer);

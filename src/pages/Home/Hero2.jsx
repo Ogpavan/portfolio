@@ -5,15 +5,21 @@ import blog from "../../assets/blog.png";
 import { SiGithub } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 function Hero2() {
   return (
-    <section className=" flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px]   mx-auto px-7 md:px-24">
+    <section className="  flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px]   mx-auto px-7 md:px-24">
       <Link to='/blogs'>
-      <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
-        <div className="w-full flex justify-center mt-3 p-6 items-center ">
+      <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}}
+            
+            className="bg-gradient-to-br from-[#222222]  to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
+        <div className="w-full flex justify-center   p-6 items-center ">
           <div className="flex justify-center items-center w-auto lg:min-w-32   ">
-            <img src={blog} alt="" className="w-16 invert" />
+            <img src={blog} alt="" className="w-20 invert" />
           </div>
         </div>
 
@@ -29,10 +35,13 @@ function Hero2() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
       </Link>
 
-      <div className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full   space-y-1  ">
+      <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full   space-y-1  ">
         <div className="">
           <div className="bg-gradient-to-br from-[#222222] to-[#1d1d1d] flex justify-between  rounded-3xl py-4   gap-x-4  px-4 md:px-10">
             <a href="https://www.linkedin.com/in/pawanpal007/ " target="_blank">
@@ -89,9 +98,12 @@ function Hero2() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
+      <motion.div
+            initial={{opacity:0,scale:0.5}}
+            whileInView={{opacity:1,scale:1}}
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
         <div className="w-full flex justify-center mt-3 p-6 items-center ">
           <div className="flex justify-center items-center w-auto lg:min-w-32   ">
             <img
@@ -115,7 +127,7 @@ function Hero2() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
