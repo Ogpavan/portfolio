@@ -11,7 +11,7 @@ function Hero1() {
     <>
       <section className="  bg-[#0F0F0F]  ">
         <div className="max-w-[1170px] mx-auto">
-          <div className="bg-[#0F0F0F] text-white/90 flex flex-wrap gap-y-4 gap-x-4  justify-center p-6 items-center">
+          <div className="bg-[#0F0F0F] text-white/90 flex flex-wrap gap-y-4 gap-x-4  justify-center py-6 items-center">
             <motion.div
             initial={{opacity:0,scale:0.5}}
             whileInView={{opacity:1,scale:1}}

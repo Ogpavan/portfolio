@@ -4,8 +4,16 @@ import realestate from '../../assets/realestate.webp'
 import photography from '../../assets/photograpgy.webp'
 import gym from '../../assets/gym.webp'
 import ProjectCard from './ProjectCard'
+import application from '../../assets/application.png'
 
 const projects = [
+  {
+    img: application,
+    alt: 'application',
+    link: 'https://write4free.vercel.app/',
+    title: 'Write 4 Free',
+    description: 'AI Application Writer',
+  },
   {
     img: realestate,
     alt: 'Real Estate',

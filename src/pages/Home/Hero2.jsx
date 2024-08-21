@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 function Hero2() {
   return (
-    <section className="  flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px]   mx-auto px-7 md:px-24">
+    <section className="  flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px]   mx-auto px-7 ">
       <Link to='/blogs'>
       <motion.div
             initial={{opacity:0,scale:0.5}}

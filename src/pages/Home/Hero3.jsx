@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 
 function Hero3() {
   return (
-    <section className=" flex  flex-col lg:flex-row gap-5 justify-evenly  max-w-[1170px] py-5  mx-auto px-7 md:px-24">
+    <section className=" flex  flex-col lg:flex-row gap-5 justify-evenly  max-w-[1170px] py-5  mx-auto px-7 ">
             <div className='flex flex-col md:flex-row gap-5 w-full'>
 
             <motion.div
