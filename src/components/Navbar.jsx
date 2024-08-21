@@ -5,7 +5,7 @@ import { CgMenuGridO } from 'react-icons/cg';
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const activeClassName = 'text-white/90 border-b-2 border-white/90 transition duration-500';
+  const activeClassName = 'text-white/90  -b-2  -white/90 transition duration-500';
   const inactiveClassName = 'text-white/90 hover:text-gray-300 text-[#676767] transition duration-500';
 
   return (
