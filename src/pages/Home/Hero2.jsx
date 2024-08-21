@@ -43,7 +43,7 @@ function Hero2() {
             whileInView={{opacity:1,scale:1}}
             transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full   space-y-1  ">
         <div className="">
-          <div className="bg-gradient-to-br from-[#222222] to-[#1d1d1d] flex justify-between  rounded-3xl py-4   gap-x-4  px-4 md:px-10">
+          <div className="bg-gradient-to-br from-[#222222] to-[#1d1d1d] flex justify-between  rounded-3xl py-4   gap-x-4  px-4 md:px-10  flex-wrap gap-y-4">
             <a href="https://www.linkedin.com/in/pawanpal007/ " target="_blank">
             <div
               aria-label="LinkedIn Profile"
@@ -73,7 +73,7 @@ function Hero2() {
               <a href="https://x.com/Pawanpal404" target="_blank">
                           <div
               aria-label="Call"
-              className="bg-[#0F0F0F]/30 rounded-full w-20 h-20 sm:flex justify-center items-center text-3xl hover:bg-white text-white hover:text-blue-600 cursor-pointer hidden xs:block"
+              className="bg-[#0F0F0F]/30 rounded-full w-20 h-20 flex justify-center items-center text-3xl hover:bg-white text-white hover:text-blue-600 cursor-pointer  "
             >
              <FaXTwitter />
             </div>
@@ -100,10 +100,11 @@ function Hero2() {
         </div>
       </motion.div>
 
+      <a href="https://drive.google.com/uc?export=download&id=1ucrn05P3S1wLV_XjsN06hr2as5IqIW01"  >
       <motion.div
             initial={{opacity:0,scale:0.5}}
             whileInView={{opacity:1,scale:1}}
-            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1  ">
         <div className="w-full flex justify-center mt-3 p-6 items-center ">
           <div className="flex justify-center items-center w-auto lg:min-w-32   ">
             <img
@@ -128,6 +129,7 @@ function Hero2() {
           </div>
         </div>
       </motion.div>
+      </a>
     </section>
   );
 }

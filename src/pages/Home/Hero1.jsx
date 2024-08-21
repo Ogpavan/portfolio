@@ -11,23 +11,23 @@ function Hero1() {
     <>
       <section className="  bg-[#0F0F0F]  ">
         <div className="max-w-[1170px] mx-auto">
-          <div className="bg-[#0F0F0F] text-white/90 flex flex-wrap gap-y-4 gap-x-4  justify-center py-6 items-center">
+          <div className="bg-[#0F0F0F] text-white/90 flex flex-wrap gap-y-4 gap-x-4  justify-center p-6 md:py-5 items-center">
             <motion.div
             initial={{opacity:0,scale:0.5}}
             whileInView={{opacity:1,scale:1}}
             transition={{duration:0,ease:"easeInOut"}}
            
             
-            className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_170,_0.3)] duration-300 px-16 py-6 space-y-1 h-80 max-w-3xl min-w-1/2 md:w-auto flex justify-center items-center  ">
+            className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(240,_46,_170,_0.3)] duration-300 sm:px-16 px-5 py-6 space-y-1 h-80 max-w-3xl flex justify-center items-center   ">
               <div>
-                <p className="inter-tight-medium text-xl text-[#BCBCBC]">
+                <p className="inter-tight-medium text-lg sm:text-xl text-[#BCBCBC] ">
                   A WEB DEVELOPER
                 </p>
-                <h1 className="inter-tight-bold text-6xl flex flex-col py-2 ">
+                <h1 className="inter-tight-bold sm:text-6xl text-5xl tracking-wide flex flex-col py-2 ">
                   <span>Pawan</span>
                   <span>Pal.</span>
                 </h1>
-                <p className="inter-tight-medium text-xl text-[#BCBCBC] flex flex-col">
+                <p className="inter-tight-medium text-lg sm:text-xl text-[#BCBCBC] flex flex-col">
                   <span>I am a Web Developer based in</span>
                   <span>Bareilly</span>{" "}
                 </p>
