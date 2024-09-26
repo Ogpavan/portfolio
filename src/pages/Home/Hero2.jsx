@@ -9,39 +9,13 @@ import { motion } from "framer-motion";
 
 function Hero2() {
   return (
-    <section className="  flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px]   mx-auto px-7 ">
-      <Link to='/blogs'>
-      <motion.div
-            initial={{opacity:0,scale:0.5}}
-            whileInView={{opacity:1,scale:1}}
-            transition={{duration:0,ease:"easeInOut"}}
-            
-            className="bg-gradient-to-br from-[#222222]  to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1 ">
-        <div className="w-full flex justify-center   p-6 items-center ">
-          <div className="flex justify-center items-center w-auto lg:min-w-32   ">
-            <img src={blog} alt="" className="w-20 invert" />
-          </div>
-        </div>
-
-        <div className="inter-tight-medium flex justify-between items-end  p-4">
-          <div className="flex flex-col">
-            <p className="text-[#9f9e9e] text-sm inter-tight-medium">Blogs</p>
-            <p className="text-xl text-white/90 inter-tight-bold"> Soon</p>
-          </div>
-          <div className=" ">
-            <img
-              src="https://wpriverthemes.com/landing/gridx-html/assets/images/icon.svg"
-              alt="icon"
-            />
-          </div>
-        </div>
-      </motion.div>
-      </Link>
+    <section className="  flex flex-col lg:flex-row gap-5 justify-center max-w-[1170px] mx-auto px-6 md:px-0 ">
+   
 
       <motion.div
             initial={{opacity:0,scale:0.5}}
             whileInView={{opacity:1,scale:1}}
-            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full   space-y-1  ">
+            transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010] rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_78,_216,_0.2)] duration-300 w-full   space-y-1 max-w-[780px] ">
         <div className="">
           <div className="bg-gradient-to-br from-[#222222] to-[#1d1d1d] flex justify-between  rounded-3xl py-4   gap-x-4  px-4 md:px-10  flex-wrap gap-y-4">
             <a href="https://www.linkedin.com/in/pawanpal007/ " target="_blank">
@@ -100,12 +74,12 @@ function Hero2() {
         </div>
       </motion.div>
 
-      <a href="https://drive.google.com/uc?export=download&id=1ucrn05P3S1wLV_XjsN06hr2as5IqIW01"  >
+      <Link to="https://drive.google.com/uc?export=download&id=1ucrn05P3S1wLV_XjsN06hr2as5IqIW01"  >
       <motion.div
             initial={{opacity:0,scale:0.5}}
             whileInView={{opacity:1,scale:1}}
             transition={{duration:0,ease:"easeInOut"}} className="bg-gradient-to-br from-[#222222] to-[#101010]  rounded-3xl hover:shadow-[0_10px_30px_rgba(0,_120,_87,_0.3)] duration-300  w-full sm:w-auto  space-y-1  ">
-        <div className="w-full flex justify-center mt-3 p-6 items-center ">
+        <div className="w-full flex justify-center  p-7 items-center  ">
           <div className="flex justify-center items-center w-auto lg:min-w-32   ">
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEHElEQVR4nO2bW6gVVRjHf56jRaVmHiTUOPlgkpejokSYR1Swl8IHRUWJUh+CihLtwQRB0RB60eiCt0B8KFLERLcXJKGLGEQ9aVkGQXlBU9Eo66hpOz75DyymPXPmuvdsz/xhPRxm1jfrd9Y33/rWN2vD/3Uv8CZwFqgWuHUBnwNTSKEW4NMCwMRp/wCdSYEXysgZYJL+AUXVQ8D7Gu8PSY18JAMv0xxqBS5rzO1JDFTUeSbNo+Mac0eSzpWeBrwvAvADend+yzkYXQG2AwMbDfxBnaPw/kYCtwJ/aSkYTb6yIPQ78C/Q1qh3uE3XLTLWQ1FgSuAsXbqtzjP8jZ73WE8BfgJ4oZt77iqXjqK6RekxFEO5r8Nb67D2WlIztCjA9wPvAhdyBDbbQ+oBXOlpuXSlBC6+yhlOG7RGAlfrvEMKarYkTs47Sj+uvWm1AO0a8FSWwJUyaBVf5QzHUaV06eIrd5ceAiwH3lBbBvT13fOkcz1tW9Ro4HU1lgv/Jv1YxstReyOBBwOrgbfUVqhW7a9UrHPuSdMWdzPmMkrHUaWM0sWRfbqdoYC5yPkE47n0mLthhnsrd14L/OoLZNeBj4Fz+ntUMwH3BVYBn+gEwhHgex1rcCF/At4GDgG3fNdsk+N5wnpgMzCuiMA2wKMhS5KBvwdMBXo5/R7RCvGFznpYrc00ALipvl3duXojgMfrmeeBWXpPZ2hd7ZfQpkHull3ziFTAz6suHbYp3xwhmbB38kHg2YifReNqjuzuSgv8nOMyQZvyTRGAf2kW4KyVF/DcEriGyhkuuEvbMclXgeFJXXpfE73DBntAfbclBd7bAOBn9EwbfC1ZsjFBn2prwV4MSCttTa9qPY4NbNnQS04V4nVgOtloip75ZcgyWFXKOUCwBx3YoExqvu75MOzhO3WTufY9vg19rbV0t+8/H6fE45VuRsvWyYAxjVAW5qWZhyPAmpbqvnfCgMcCl3TjXge6RcHBq0JscE7iLalh51iM0s19wA1lb/7Kiad2ZxsYBRa919UoB2XHBUAHvSPmXiQo8bilm69l6+mQcfWXR52KuPf9WTYtV+9W7kwf1Hvj10Rd/5b0WiVbdrYyC3U6575bo3YKcu88gB8FbmsjEvVsR5h2aWxr4nYMg84SGEXTLGa5U+cz/wAeTmJgrIKEHzprYAtMf8vmvIQ2Bjrv7so0g6kFnTWw6UXZ/DPBDzcswn+m/rZK9Ek7GD/0pByATVucwoKtBFFkn3++Ur/TGcWBO+pwoL/LCbjFVzHZFnJmq1UJjPdDD3PnYRmPBxc6D2Avf35Fs+wV4zYqDe2vCuVrqmJWHa8bRE7q8EFn1bp8ObqllTu0ZAX1+RFYkBcoPmirS2UJbDM6rcazbEat1nxCkdwKgHuA2XESC9N/6gkoiWekip4AAAAASUVORK5CYII="
@@ -129,7 +103,7 @@ function Hero2() {
           </div>
         </div>
       </motion.div>
-      </a>
+      </Link>
     </section>
   );
 }

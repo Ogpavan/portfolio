@@ -57,7 +57,7 @@ function About() {
                  <div>
                   <p className="text-[#9f9e9e]">2021 - 2023</p>
                   <p className="inter-tight-bold text-lg">Designer and Developer</p>
-                  <p  className="text-[#9f9e9e]">Freelancer</p>
+                  <p  className="text-[#9f9e9e]">laptopfirst.in</p>
                  </div>
                  <div>
                   <p  className="text-[#9f9e9e]">2023 - Present</p>
